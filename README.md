@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Better.com Replica - React & Next.js Assignment
 
-## Getting Started
+This repository contains a multi-page React application built with **Next.js**, replicating the design and basic functionality of selected pages from [Better.com](https://better.com).
 
-First, run the development server:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Pages](#pages)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [Author](#author)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Overview
+The goal of this project was to create a multi-page React application with Next.js that replicates the design and functionality of the following Better.com pages:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Home Page**: [https://better.com](https://better.com)  
+2. **About Us Page**: [https://better.com/about-us/](https://better.com/about-us/)  
+3. **Mortgage Calculator Page**: [https://better.com/mortgage-calculator?taxes=265&zip=421005](https://better.com/mortgage-calculator?taxes=265&zip=421005)  
+4. **Start Page**: [https://better.com/start](https://better.com/start)  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
+- Multi-page routing using Next.js
+- Responsive design for desktop and mobile devices
+- Interactive **Mortgage Calculator** with PMI & taxes
+- Forms replication from Better.com
+- Styled to closely match the original website
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
+- React 18
+- Next.js 13
+- Tailwind CSS (for styling and responsiveness)
+- Framer Motion (for animations)
+- Vercel (for deployment)
 
-## Learn More
+## Installation
+To run the project locally:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-link>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate into the project directory:
+   ```
+   cd better-replica
+   ```
+3. Install dependencies:
+    ```
+    npm install
+    ```
+4. Run the development server:
+   ```
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open http://localhost:3000 in your browser.
 
-## Deploy on Vercel
+## Deployed Site URL
+[Live Now]()
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Note:** This project was completed as part of the selection process for the React Intern role at Medius Technologies Private Limited.
