@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function StartPage() {
-  const handleClick = (index: number) => {
+  const handleClick = () => {
     setTimeout(() => {
       alert("Button clicked!");
     }, 2000);
@@ -23,20 +23,23 @@ export default function StartPage() {
   };
 
   return (
-    <main className="max-w-4xl mx-auto flex flex-col items-center justify-center mt-30 min-h-screen px-6 md:px-40 py-12">
+    <main className="max-w-4xl mx-auto flex flex-col items-center justify-center mt-32 min-h-screen px-6 md:px-40 py-12">
       <motion.h1
-        {...slideInLeft}
+        initial={slideInLeft.initial}
+        animate={slideInLeft.animate}
+        transition={slideInLeft.transition}
         className="text-2xl md:text-[38px] font-bold mb-12 text-black text-center p-2"
       >
-        Hi, I'm Betsy! <br /> What can I help you with?
+        Hi, I&apos;m Betsy! <br /> What can I help you with?
       </motion.h1>
 
       <div className="flex flex-col gap-6 w-full mb-12">
         {buttons.map((btn, idx) => (
           <motion.button
             key={idx}
-            onClick={() => handleClick(idx)}
-            {...slideInLeft}
+            onClick={handleClick}
+            initial={slideInLeft.initial}
+            animate={slideInLeft.animate}
             transition={{ ...slideInLeft.transition, delay: idx * 0.2 }}
             className="flex items-center gap-3 text-lg font-bold text-[#292e36] 
               border-0 hover:text-green-800 rounded-lg px-6 py-4 w-full 
@@ -49,7 +52,8 @@ export default function StartPage() {
       </div>
 
       <motion.div
-        {...slideInLeft}
+        initial={slideInLeft.initial}
+        animate={slideInLeft.animate}
         transition={{ ...slideInLeft.transition, delay: 0.6 }}
         className="flex flex-col md:flex-row gap-10 text-center justify-center items-center w-full"
       >
@@ -67,11 +71,12 @@ export default function StartPage() {
       </motion.div>
 
       <motion.p
-        {...slideInLeft}
+        initial={slideInLeft.initial}
+        animate={slideInLeft.animate}
         transition={{ ...slideInLeft.transition, delay: 0.8 }}
         className="pt-10 pb-5"
       >
-        After a few questions, you'll unlock:
+        After a few questions, you&apos;ll unlock:
       </motion.p>
 
       <div className="flex flex-col md:flex-col gap-2 text-center">
@@ -82,7 +87,8 @@ export default function StartPage() {
         ].map((item, idx) => (
           <motion.div
             key={idx}
-            {...slideInLeft}
+            initial={slideInLeft.initial}
+            animate={slideInLeft.animate}
             transition={{ ...slideInLeft.transition, delay: 0.9 + idx * 0.2 }}
             className="flex items-center gap-2 justify-center"
           >
