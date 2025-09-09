@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from 'next/link';
+
 
 export default function Footer() {
   return (
@@ -30,9 +32,9 @@ export default function Footer() {
           pre-closing and which may trigger additional required documentation
           from the customer. Better Mortgage does not guarantee that initial
           underwriting approval will result in a final underwriting approval.
-          <a href="" className="underline">
+          <Link href="" className="underline">
             See One Day Mortgage™ Terms and Conditions.
-          </a>
+          </Link>
         </p>
 
         <p>
@@ -46,10 +48,10 @@ export default function Footer() {
           may trigger additional required documentation from the customer.
           Better Mortgage does not guarantee that initial underwriting approval
           will result in final underwriting approval. See{" "}
-          <a href="" className="underline">
+          <Link href="" className="underline">
             {" "}
             One Day Heloc™ Terms and Conditions.
-          </a>
+          </Link>
         </p>
 
         <p>
@@ -85,10 +87,10 @@ export default function Footer() {
           Center, 80th Floor, New York, NY 10007. Loans made or arranged
           pursuant to a California Finance Lenders Law License. Not available in
           all states. Equal Housing Lender.{" "}
-          <a href="" className="underline">
+          <Link href="" className="underline">
             {" "}
             NMLS Consumer Access
-          </a>
+          </Link>
         </p>
 
         <p>
@@ -98,9 +100,9 @@ export default function Footer() {
           Inc., is a licensed real estate brokerage and maintains its corporate
           headquarters at 325-41 Chestnut Street, Suite 826, Philadelphia, PA
           19106. Here is a full listing of Better Real Estate, LLC’s{" "}
-          <a href="" className="underline">
+          <Link href="" className="underline">
             license numbers
-          </a>
+          </Link>
           Better Real Estate, LLC provides access to real estate brokerage
           services via its nationwide network of partner brokerages and real
           estate agents (“Better Real Estate Partner Agents”). Equal Housing
@@ -108,22 +110,22 @@ export default function Footer() {
         </p>
 
         <p>
-          <a href="" className="underline">
+          <Link href="" className="underline">
             New York State Housing and Anti-Discrimination Notice
-          </a>
+          </Link>
         </p>
 
         <p>
-          <a href="" className="underline">
+          <Link href="" className="underline">
             New York Standard Operating Procedures
-          </a>
+          </Link>
         </p>
 
         <p>
           Texas Real Estate Commission:{" "}
-          <a href="" className="underline">
+          <Link href="" className="underline">
             Information About Brokerage Services | Consumer Protection Notice
-          </a>
+          </Link>
         </p>
 
         <p>
@@ -141,9 +143,9 @@ export default function Footer() {
           Insurance quotes and policies are offered through Better Cover, LLC. A
           Pennsylvania Resident Producer Agency. License #881593. Here is a full
           listing of Better Cover, LLC’s{" "}
-          <a href="" className="underline">
+          <Link href="" className="underline">
             license numbers.
-          </a>
+          </Link>
         </p>
 
         <p>

@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from 'next/link';
+
 
 const navItems = [
   {
@@ -75,7 +77,7 @@ export default function Navbar() {
       className="w-full bg-white shadow-sm fixed top-0 left-0 z-50"
     >
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="cursor-pointer">
+        <Link  href="/" className="cursor-pointer">
           <Image
             src="/start/better.svg"
             alt="Better Logo"
@@ -83,7 +85,7 @@ export default function Navbar() {
             height={40}
             priority
           />
-        </a>
+        </Link >
 
         <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
           {navItems.map((item) => (
@@ -106,13 +108,13 @@ export default function Navbar() {
                     className="absolute top-8 left-0 bg-white shadow-lg rounded-lg py-2 w-64"
                   >
                     {item.links.map((link) => (
-                      <a
+                      <Link 
                         key={link.href}
                         href={link.href}
                         className="block px-4 py-2 hover:bg-gray-100 text-sm"
                       >
                         {link.label}
-                      </a>
+                      </Link >
                     ))}
                   </motion.div>
                 )}
@@ -145,30 +147,30 @@ export default function Navbar() {
                   className="absolute top-12 right-0 bg-white shadow-lg rounded-lg py-2 px-4 w-56 text-sm text-gray-700"
                 >
                   📞 Call us anytime at{" "}
-                  <a
+                  <Link 
                     href="tel:4155238837"
                     className="text-[#017848] font-semibold"
                   >
                     415-523-8837
-                  </a>
+                  </Link >
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
-          <a
+          <Link 
             href="/account/sign-in"
             className="hidden md:block px-4 py-2 text-gray-700 hover:text-[#017848] font-medium"
           >
             Sign in
-          </a>
+          </Link >
 
-          <a
+          <Link 
             href="/preapproval"
             className="px-6 py-2 bg-[#017848] text-white font-bold rounded-full hover:bg-[#026a3c] transition"
           >
             Continue
-          </a>
+          </Link >
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -202,7 +204,7 @@ export default function Navbar() {
                     <ul className="ml-4 space-y-2 text-sm">
                       {item.links.map((link) => (
                         <li key={link.href}>
-                          <a href={link.href}>{link.label}</a>
+                          <Link  href={link.href}>{link.label}</Link >
                         </li>
                       ))}
                     </ul>
@@ -212,26 +214,26 @@ export default function Navbar() {
 
               <li className="pt-2 text-sm text-gray-600">
                 📞 Call us anytime at{" "}
-                <a
+                <Link 
                   href="tel:4155238837"
                   className="text-[#017848] font-semibold"
                 >
                   415-523-8837
-                </a>
+                </Link >
               </li>
 
               <li>
-                <a href="/account/sign-in" className="block py-2">
+                <Link  href="/account/sign-in" className="block py-2">
                   Sign in
-                </a>
+                </Link >
               </li>
               <li>
-                <a
+                <Link 
                   href="/preapproval"
                   className="block py-2 bg-[#017848] text-white text-center rounded-full"
                 >
                   Continue
-                </a>
+                </Link >
               </li>
             </ul>
           </motion.div>

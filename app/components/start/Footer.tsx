@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from 'next/link';
+
 
 export default function Footer() {
   return (
@@ -39,14 +41,14 @@ export default function Footer() {
               { text: "Resources", href: "#" },
             ].map((item, idx) => (
               <li key={idx}>
-                <a
+                <Link
                   href={item.href}
                   className="relative text-grey-700 hover:text-black-600 transition-colors duration-300
                              after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] 
                              after:bg-black after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   {item.text}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -64,14 +66,14 @@ export default function Footer() {
               "Affiliated Business",
             ].map((item, idx) => (
               <li key={idx}>
-                <a
+                <Link
                   href="#"
                   className="relative text-grey-700 hover:text-black-600 transition-colors duration-300
                              after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] 
                              after:bg-black after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

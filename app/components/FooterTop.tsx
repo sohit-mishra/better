@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function FooterTop() {
   const containerVariants = {
@@ -91,9 +92,9 @@ export default function FooterTop() {
               "Get home inspection",
             ].map((item, i) => (
               <li key={i}>
-                <a href="#" className="hover:text-green-700 no-underline">
+                <Link  href="#" className="hover:text-green-700 no-underline">
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -112,9 +113,9 @@ export default function FooterTop() {
               "Investor Relations",
             ].map((item, i) => (
               <li key={i}>
-                <a href="#" className="hover:text-green-700 no-underline">
+                <Link href="#" className="hover:text-green-700 no-underline">
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -124,27 +125,27 @@ export default function FooterTop() {
           <h3 className="font-bold mb-4 text-xl">Contact Us</h3>
           <ul className="space-y-3 text-[18px] text-[#4a4d4a]">
             <li>
-              <a
+              <Link
                 href="mailto:hello@better.com"
                 className="hover:text-green-700"
               >
                 hello@better.com
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="tel:4155238837" className="hover:text-green-700">
+              <Link href="tel:4155238837" className="hover:text-green-700">
                 415-523-8837
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <Link href="#" className="hover:text-green-700">
                 FAQ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <Link href="#" className="hover:text-green-700">
                 Glossary
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -159,9 +160,9 @@ export default function FooterTop() {
               "Browser Disclaimer",
             ].map((item, i) => (
               <li key={i}>
-                <a href="#" className="hover:text-green-700 no-underline">
+                <Link href="#" className="hover:text-green-700 no-underline">
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

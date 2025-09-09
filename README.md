@@ -14,10 +14,10 @@ This repository contains a multi-page React application built with **Next.js**, 
 ## Project Overview
 The goal of this project was to create a multi-page React application with Next.js that replicates the design and functionality of the following Better.com pages:
 
-1. **Home Page**: [https://better.com](https://better.com)  
-2. **About Us Page**: [https://better.com/about-us/](https://better.com/about-us/)  
-3. **Mortgage Calculator Page**: [https://better.com/mortgage-calculator?taxes=265&zip=421005](https://better.com/mortgage-calculator?taxes=265&zip=421005)  
-4. **Start Page**: [https://better.com/start](https://better.com/start)  
+1. **Home Page**: [https://better-hu6d.onrender.com](https://better-hu6d.onrender.com/)  
+2. **About Us Page**: [https://better-hu6d.onrender.com/about-us/](https://better-hu6d.onrender.com/about-us/)  
+3. **Mortgage Calculator Page**: [https://better-hu6d.onrender.com//mortgage-calculator](https://better-hu6d.onrender.com//mortgage-calculator)  
+4. **Start Page**: [https://better-hu6d.onrender.com/start](https://better-hu6d.onrender.com/start)  
 
 ## Features
 - Multi-page routing using Next.js

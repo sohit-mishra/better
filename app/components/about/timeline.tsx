@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from 'next/link';
+
 
 const timeline = [
   {
@@ -42,9 +44,9 @@ const timeline = [
     description: (
       <>
         Better Mortgage launches One Day Mortgage¹: The first offering to customers to go from application to{" "}
-        <a href="/with/one-day-mortgage-terms" className="underline">
+        <Link href="/with/one-day-mortgage-terms" className="underline">
           full mortgage Commitment Letter within 24 hours
-        </a>{" "}
+        </Link>{" "}
         vs. typical industry process of 30+ days.
       </>
     ),
@@ -62,12 +64,12 @@ const timeline = [
     description: (
       <>
         You become part of the story by joining tens of thousands of happy Better Mortgage borrowers.
-        <a
+        <Link
           href="/start"
           className="rounded-full bg-[#017848] text-white px-10 py-2 text-base text-center font-bold select-none outline-none transition duration-300 ease-universal hover:bg-accentPrimary focus:bg-accentPrimary active:bg-accentPrimary mt-4 flex w-fit"
         >
           Get started
-        </a>
+        </Link>
       </>
     ),
   },
