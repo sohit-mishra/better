@@ -22,6 +22,12 @@ export default function StartPage() {
     transition: { duration: 0.6, ease: "easeOut" as const },
   };
 
+  const features = [
+    { icon: "/start/rates.svg", text: "Custom mortgage rates" },
+    { icon: "/start/offer.svg", text: "Exclusive offers" },
+    { icon: "/start/dashboard.svg", text: "A personalized dashboard" },
+  ];
+
   return (
     <main className="max-w-4xl mx-auto flex flex-col items-center justify-center mt-32 min-h-screen px-6 md:px-40 py-12">
       <motion.h1
@@ -80,11 +86,7 @@ export default function StartPage() {
       </motion.p>
 
       <div className="flex flex-col md:flex-col gap-2 text-center">
-        {[
-          { icon: "/start/rates.svg", text: "Custom mortgage rates" },
-          { icon: "/start/offer.svg", text: "Exclusive offers" },
-          { icon: "/start/dashboard.svg", text: "A personalized dashboard" },
-        ].map((item, idx) => (
+        {features.map((item, idx) => (
           <motion.div
             key={idx}
             initial={slideInLeft.initial}
